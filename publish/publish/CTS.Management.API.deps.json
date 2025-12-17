@@ -80,11 +80,11 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.3.0": {
+      "BouncyCastle.Cryptography/2.6.1": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.0.53016"
+            "fileVersion": "2.6.1.59591"
           }
         }
       },
@@ -780,6 +780,18 @@
           }
         }
       },
+      "MimeKit/4.14.0": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.6.1",
+          "System.Security.Cryptography.Pkcs": "8.0.1"
+        },
+        "runtime": {
+          "lib/net8.0/MimeKit.dll": {
+            "assemblyVersion": "4.14.0.0",
+            "fileVersion": "4.14.0.0"
+          }
+        }
+      },
       "MongoDB.Bson/2.22.0": {
         "dependencies": {
           "System.Memory": "4.5.5",
@@ -885,7 +897,7 @@
       },
       "NPOI/2.7.0": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.0",
+          "BouncyCastle.Cryptography": "2.6.1",
           "Enums.NET": "4.0.1",
           "ExtendedNumerics.BigDecimal": "2023.1000.0.230",
           "MathNet.Numerics.Signed": "5.0.0",
@@ -894,7 +906,7 @@
           "SixLabors.Fonts": "1.0.1",
           "SixLabors.ImageSharp": "2.1.7",
           "System.Configuration.ConfigurationManager": "6.0.1",
-          "System.Security.Cryptography.Pkcs": "6.0.3",
+          "System.Security.Cryptography.Pkcs": "8.0.1",
           "System.Security.Cryptography.Xml": "6.0.1"
         },
         "runtime": {
@@ -1120,7 +1132,7 @@
           "System.Threading": "4.3.0"
         }
       },
-      "System.Formats.Asn1/6.0.0": {},
+      "System.Formats.Asn1/5.0.0": {},
       "System.Globalization/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1384,12 +1396,23 @@
       "System.Security.AccessControl/6.0.0": {},
       "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
-          "System.Formats.Asn1": "6.0.0"
+          "System.Formats.Asn1": "5.0.0"
         }
       },
-      "System.Security.Cryptography.Pkcs/6.0.3": {
-        "dependencies": {
-          "System.Formats.Asn1": "6.0.0"
+      "System.Security.Cryptography.Pkcs/8.0.1": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
         }
       },
       "System.Security.Cryptography.ProtectedData/6.0.0": {
@@ -1411,7 +1434,7 @@
       "System.Security.Cryptography.Xml/6.0.1": {
         "dependencies": {
           "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.3"
+          "System.Security.Cryptography.Pkcs": "8.0.1"
         }
       },
       "System.Security.Permissions/6.0.0": {
@@ -1586,7 +1609,8 @@
           "CTS.DataAccess.Entities": "1.0.0",
           "CTS.Queries": "1.0.0",
           "IdentityModel": "6.0.0",
-          "Microsoft.Extensions.Http": "8.0.0"
+          "Microsoft.Extensions.Http": "8.0.0",
+          "MimeKit": "4.14.0"
         },
         "runtime": {
           "CTS.Providers.dll": {
@@ -1656,12 +1680,12 @@
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.3.0": {
+    "BouncyCastle.Cryptography/2.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IaVIiYxZLaBulveGDRUx/pBoW/Rc8QeXGF5u2E8xL8RWhVKCgfmtX9NUyGRbnSqnbFQU2zyP3MkXIdH+jUuQBw==",
-      "path": "bouncycastle.cryptography/2.3.0",
-      "hashPath": "bouncycastle.cryptography.2.3.0.nupkg.sha512"
+      "sha512": "sha512-vZsG2YILhthgRqO+ZVgRff4ZFKKTl0v7kqaVBLCtRvpREhfBP33pcWrdA3PRYgWuFL1RxiUFvjMUHTdBZlJcoA==",
+      "path": "bouncycastle.cryptography/2.6.1",
+      "hashPath": "bouncycastle.cryptography.2.6.1.nupkg.sha512"
     },
     "DnsClient/1.6.1": {
       "type": "package",
@@ -2230,6 +2254,13 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
+    "MimeKit/4.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g0LtsMC8DCTkc030C3UgVqbltOJmV5cz4AX8ASowz2ZA+lxopXSYtC1XXYmenxy606aWFLwi5Xy4cC/zyYjbjQ==",
+      "path": "mimekit/4.14.0",
+      "hashPath": "mimekit.4.14.0.nupkg.sha512"
+    },
     "MongoDB.Bson/2.22.0": {
       "type": "package",
       "serviceable": true,
@@ -2440,12 +2471,12 @@
       "path": "system.dynamic.runtime/4.0.11",
       "hashPath": "system.dynamic.runtime.4.0.11.nupkg.sha512"
     },
-    "System.Formats.Asn1/6.0.0": {
+    "System.Formats.Asn1/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==",
-      "path": "system.formats.asn1/6.0.0",
-      "hashPath": "system.formats.asn1.6.0.0.nupkg.sha512"
+      "sha512": "sha512-MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w==",
+      "path": "system.formats.asn1/5.0.0",
+      "hashPath": "system.formats.asn1.5.0.0.nupkg.sha512"
     },
     "System.Globalization/4.3.0": {
       "type": "package",
@@ -2678,12 +2709,12 @@
       "path": "system.security.cryptography.cng/5.0.0",
       "hashPath": "system.security.cryptography.cng.5.0.0.nupkg.sha512"
     },
-    "System.Security.Cryptography.Pkcs/6.0.3": {
+    "System.Security.Cryptography.Pkcs/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-18UT1BdZ4TYFBHk/wuq7JzCdE3X75z81X+C2rXqIlmEnC21Pm60spGV/dKQSzbyomstqYE33EuN5hfnC86VFxA==",
-      "path": "system.security.cryptography.pkcs/6.0.3",
-      "hashPath": "system.security.cryptography.pkcs.6.0.3.nupkg.sha512"
+      "sha512": "sha512-CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+      "path": "system.security.cryptography.pkcs/8.0.1",
+      "hashPath": "system.security.cryptography.pkcs.8.0.1.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/6.0.0": {
       "type": "package",
